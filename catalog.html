@@ -47,9 +47,133 @@
 	</header>
 	<main>
 		<!-- Хлебные крошки -->
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Магазин</a></li>
+			<li class="breadcrumbs-current">Средства для ухода</li>
+		</ul>
 		<!-- Фильтр -->
-		<!-- Перфораторы -->
-		<!-- Пагинация -->
+		<section class="filters">
+			<h6>Фильтр:</h6>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Цена</legend>
+					<input type="range" min="0" max="50000" step="1000" value="30000">
+					<span>0 — 30000</span>
+				</fieldset>
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>
+							Bosch
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
+							Интерскол
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
+							Makita
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" >
+							DeWalt
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">
+							Hitachi
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Группы товаров:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" checked>
+							Аккумуля
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="electrical-grid">
+							Сетевое
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="filter-button button">Показать</button>
+			</form>
+		</section>
+		<!-- ПЕРФОРАТОРЫ -->
+		<section class="catalog">
+			<div class="catalog-sort">
+				<h6>Сортировка:</h6>
+				<a href="#">По цене</a>
+				<a href="#">По типу</a>
+				<a href="#">По функционалу</a>
+			</div>
+			<ul class="goods-catalog">
+				<li class="goods-item">
+						<img src="" alt="Фото товара">
+						<h5>Перфоратор BOSCH<br>BFG 3000</h5>
+						<strike>22500 Р.</strike><br>
+						<span>15500 Р.</span>
+				</li>
+				<li class="goods-item">
+						<img src="" alt="Фото товара">
+						<h5>Перфоратор BOSCH<br>BFG 6000</h5>
+						<strike>30500 Р.</strike><br>
+						<span>25500 Р.</span>
+				</li>
+				<li class="goods-item goods-hovered"> 
+				<!-- Карточка товара при наведении -->
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+						<h5>Перфоратор BOSCH<br>BFG 2000</h5>
+						<span>15500 Р.</span>
+				</li>
+				<li class="goods-item">
+						<img src="" alt="Фото товара">
+						<h5>Перфоратор BOSCH<br>BFG 3000</h5>
+						<strike>22500 Р.</strike><br>
+						<span>15500 Р.</span>
+				</li>
+				<li class="goods-item">
+						<img src="" alt="Фото товара">
+						<h5>Перфоратор BOSCH<br>BFG 6000</h5>
+						<strike>30500 Р.</strike><br>
+						<span>25500 Р.</span>
+				</li>
+				<li class="goods-item"> 
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+						<h5>Перфоратор BOSCH<br>BFG 2000</h5>
+						<span>15500 Р.</span>
+				</li>
+				<li class="goods-item">
+						<img src="" alt="Фото товара">
+						<h5>Перфоратор BOSCH<br>BFG 3000</h5>
+						<strike>22500 Р.</strike><br>
+						<span>15500 Р.</span>
+				</li>
+				<li class="goods-item">
+						<img src="" alt="Фото товара">
+						<h5>Перфоратор BOSCH<br>BFG 6000</h5>
+						<strike>30500 Р.</strike><br>
+						<span>25500 Р.</span>
+				</li>
+				<li class="goods-item"> 
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+						<h5>Перфоратор BOSCH<br>BFG 2000</h5>
+						<span>15500 Р.</span>
+				</li>
+			</ul>
+			<ul class="pagination">
+				<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">Следующая</a></li>
+			</ul>
+		</section>
 		<section class="hammer-drills-description">
 			<h2>Пара слов о перфораторах</h2>
 			<p>
@@ -58,7 +182,7 @@
 			</p>
 		</section>
 	</main>
-		<footer>
+	<footer>
 		<section class="company-footer">
 			<a class="main-header-logo" href="index.html">
 				<img src="img/index-logo.svg" width="210" height="60" alt="Логотип магазина 'Техномарт'">
@@ -89,15 +213,15 @@
 				Все права защищены
 			</p>
 			<ul class="social-networks">
-					<li class="vk-link"><a href=""></a></li>
-					<li class="facebook-link"><a href=""></a></li>
-					<li class="instagram-link"><a href=""></a></li>
+				<li class="vk-link"><a href=""></a></li>
+				<li class="facebook-link"><a href=""></a></li>
+				<li class="instagram-link"><a href=""></a></li>
 			</ul>
 			<div class="developer-mail">
 				Обратная связь:<br>
 				<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 			</div>
-				<div class="developer-website">
+			<div class="developer-website">
 				Разработано —
 				<a href="htmlacademy.ru">htmlacademy.ru</a>
 			</div>
