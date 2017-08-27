@@ -1,0 +1,180 @@
+body {
+	margin: 0;
+ 	padding: 0;
+
+	font-family: "PT Sans", Arial, Sans-Serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000;
+
+	background-color: #fff;
+	background-image: url("../img/background.png");
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.main-header {
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.header-top {
+	background-color: #33445a;
+}
+
+.header-wrapper {
+	display: flex;
+	height: 42px;
+	margin: 0 auto;
+	width: 940px;
+	color: white;
+}
+
+.header-top a {
+	color: white;
+}
+
+.header-top-logo {
+	position: relative;
+	
+	width: 220px;
+	height: 42px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	text-indent: 2px;
+	
+	background-color: #ff5357;
+}
+
+.header-top-logo::before {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	height: 5px;
+	width: 220px;
+	background-color: #c23f42;
+}
+
+.header-top-logo:hover,
+.header-top-logo:focus {
+	background-color: #ca2c37;
+}
+
+.header-top-logo:hover::before,
+.header-top-logo:focus::before {
+	background-color: #9a212a;
+}
+
+.header-top-logo:active {
+	background-color: #ba2732;
+}
+
+.header-top-logo:active::before {
+	background-color: #8e1e26;
+}
+
+.search {
+	width: 270px;
+	box-sizing: border-box;
+	border: 0px;
+	padding-left: 49px;
+	padding-bottom: 3px;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 17px;
+	color: white;
+	
+	background: inherit;
+	
+	outline: none;
+}
+
+.search:hover {
+	background-color: #212a3a;
+}
+
+.search:focus {
+	color: black;
+	background-color: white;
+}
+
+.user-card {
+	display: flex;
+	height: inherit;
+	width: 450px;
+	margin: 0;
+}
+
+.user-card-items {
+	padding-top: 8px;
+	width: 150px;
+}
+
+.user-card-items:nth-child(1) {
+	text-indent: 45px;
+}
+
+.user-card-items:nth-child(2) {
+	text-indent: 50px;
+}
+
+.user-card-items:nth-child(3) {
+  text-align: center;
+	background-color: #6db254;
+}
+
+.user-card-items:hover {
+  background-color: #212a3a;
+}
+
+.user-card-items:nth-child(3):hover {
+	background-color: #5fbb2d;
+}
+
+.user-card-items:active {
+	color: rgba(255,255,255, 0.6);
+  background-color: #161d29;
+}
+
+.user-card-items:nth-child(3):active {
+	color: rgba(255,255,255, 0.51);
+	background-color: #518534;
+}
+
+.header-middle {
+	display: flex;
+	margin: 0 auto;
+	width: 940px;
+	height: 158px;
+}
+
+.description {
+	box-sizing: border-box;
+	padding-top: 32px;
+	padding-left: 53px;
+	width: 275px;
+	height: inherit;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-style: Italic;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 23px;
+	color: #ff5357;
+}
+
