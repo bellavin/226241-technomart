@@ -21,82 +21,89 @@
 			</div>
 		</section>
 		<section class="header-middle">
-			<div class="description"><p>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p></div>
-			<div class="contact-header">
-				<p>+7 (812) 555-05-55</p>
-				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			<div class="header-description"><p>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p></div>
+			<div class="header-contact">
+				<p class="header-phone-number">+7 (812) 555-05-55</p>
+				<p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
-			<div class="user-login">
+			<div class="header-user-login">
 				<a href="#">Войти</a>
 				<a href="#">Регистрация</a>
 			</div>
 		</section>
 		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Компания</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+			<a href="#">Главная</a>
+			<a href="#">Компания</a>
+			<a href="catalog.html">Каталог</a>
+			<a href="#">Новости</a>
+			<a href="#">Спецпредложения</a>
+			<a href="#">Доставка</a>
+			<a href="#">Контакты</a>
 		</nav>
 	</header>
 	<main>
 		<section class="services-navigation">
 			<h2 class="visually-hidden">Навигация по услугам и слайдер</h2>
-			<ul class="slider">
-				<li class="slide">
-					<h3>Перфораторы</h3>
-					<span>Настоящие мужские игрушки</span>
-					<a href="catalog.html">Открыть каталог</a>
-					<img src="" alt="Фон слайдера" width="655" height="440">
-				</li>
-				<li class="slide">
-					<h3>Дрели</h3>
-					<span>Соседям на радость!</span>
-					<a href="catalog.html">Открыть каталог</a>
-					<img src="" alt="Фон слайдера" width="655" height="440">
-				</li>
-			</ul>
-			<ul class="services-items">
-				<li>
+			<div class="services-items services-clearfix">
+				<div class="services-item services-materials">
 					<h4>Материалы</h4>
-					<a href="">На любой вкус</a>
-				</li>
-				<li>
-					<h4>Инструменты</h4>
-					<a href="">На все случаи</a>
-				</li>
-				<li>
+					<a href="#" class="services-item-link">На любой вкус</a>
+				</div>
+				<div class="services-item services-tools">
+					<h4>Инструмент</h4>
+					<a href="#" class="services-item-link">На все случаи</a>
+				</div>
+				<div class="services-item services-technique">
 					<h4>Техника</h4>
-					<a href="">Для стройки</a>
-				</li>
-				<li>
+					<a href="#" class="services-item-link">Для стройки</a>
+				</div>
+				<div class="services-item brutal-slider">
+					<a href="catalog.html">Открыть каталог</a>
+					<input type="radio" id="brutal-slider-btn-1" name="toggle" checked>
+					<input type="radio" id="brutal-slider-btn-2" name="toggle">
+					<div class="brutal-slider-controls">
+						<label for="brutal-slider-btn-1"></label>
+						<label for="brutal-slider-btn-2"></label>
+					</div>
+					<div class="brutal-slider-inner">
+						<ul class="brutal-slider-slides">
+							<li class="brutal-slide">
+								<h3>Перфораторы</h3>
+								<span>Настоящие мужские игрушки</span>
+								<img src="img/brutal-guys-slider1.jpg" alt="Фон слайдера" width="620" height="266">
+							</li>
+							<li class="brutal-slide">
+								<h3>Дрели</h3>
+								<span>Соседям на радость!</span>
+								<img src="img/brutal-guys-slider2.jpg" alt="Фон слайдера" width="620" height="266">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="services-item services-discount">
 					<h4>Скидки 50%</h4>
-					<a href="">На 350 товаров</a>
-				</li>
-				<li>
+					<a href="#" class="services-item-link">На 350 товаров</a>
+				</div>
+				<div class="services-item services-delivery">
 					<h4>Доставка</h4>
-					<a href="">Бесплатно</a>
-				</li>
-			</ul>
+					<a href="#" class="services-item-link">Бесплатно</a>
+				</div>
+			</div>
 		</section>
 		<section class="popular-goods">
-			<h2>Популярные товары</h2>
-			<a href="catalog.html">Все популярные товары</a>
+			<h2>Популярные товары:</h2>
+			<a href="catalog.html" class="all-popular-goods">Все популярные товары</a>
 			<ul class="goods-items">
 				<li class="goods-item">
 					<div class="hovered-goods">
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
 					</div>
-					<img src="" alt="Фото товара">
+					<img src="img/bosh9000.jpg" alt="Фото товара" width="218px" height="150px">
 					<a href="">
 						<h5>Перфоратор BOSCH BFG 9000</h5>
-						<span>32500 Р.</span><br>
-						<span>25500 Р.</span>
+						<span class="old-price">32500 Р.</span>
+						<span class="new-price">25500 Р.</span>
 					</a>
 				</li>
 				<li class="goods-item">
@@ -104,11 +111,11 @@
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
 					</div>
-					<img src="" alt="Фото товара">
+					<img src="img/bosh3000.jpg" alt="Фото товара" width="218" height="150">
 					<a href="">
 						<h5>Перфоратор BOSCH BFG 3000</h5>
-						<span>22500 Р.</span><br>
-						<span>15500 Р.</span>
+						<span class="old-price">22500 Р.</span>
+						<span class="new-price">15500 Р.</span>
 					</a>
 				</li>
 				<li class="goods-item">
@@ -116,23 +123,23 @@
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
 					</div>
-					<img src="" alt="Фото товара">
+					<img src="img/bosh6000.jpg" alt="Фото товара" width="218px" height="150px">
 					<a href="">
 						<h5>Перфоратор BOSCH BFG 6000</h5>
-						<span>30500 Р.</span><br>
-						<span>25500 Р.</span>
+						<span class="old-price">30500 Р.</span>
+						<span class="new-price">25500 Р.</span>
 					</a>
 				</li>
-				<li>
+				<li class="goods-item">
 					<div class="hovered-goods">
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
 					</div>
-					<img src="" alt="Фото товара">
+					<img src="img/bosh2000.jpg" alt="Фото товара" width="218px" height="150px">
 					<a href="">
 						<h5>Перфоратор BOSCH BFG 2000</h5>
-						<span></span>
-						<span>15500 Р.</span>
+						<span class="old-price"></span>
+						<span class="new-price">15500 Р.</span>
 					</a>
 				</li>
 			</ul>
