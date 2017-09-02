@@ -219,6 +219,7 @@ h2 {
 .main-navigation a {
 	position: relative;
 	flex-grow: 1;
+	border-bottom: 5px solid #293449;
 	text-align: center;
 	line-height: 56px;
 	color: white;
@@ -227,25 +228,13 @@ h2 {
 .main-navigation a:first-child { padding-left: 22px; }
 .main-navigation a:last-child { padding-right: 23px; }
 
-.main-navigation a::before {
-	content: "";
-	position: absolute;
-	bottom: 0px;
-	left: 0;
-	height: 5px;
-	width: 100%;
-	background-color: #293449;
-}
-
 .main-navigation a:visited { color: white; }
 .main-navigation a:hover,
 .main-navigation a:focus { background-color: #293449; }
 .main-navigation a:active { 
 	background-color: #1d2739;
+	border-color: #1d2739;
 	color: rgba(255, 255, 255, 0.5);
-}
-.main-navigation a:active::before {
-	display: none;
 }
 
 main {
@@ -343,6 +332,7 @@ main {
 }
 
 .brutal-slider-inner {
+	position: relative;
 	height: 266px;
   overflow: hidden;
 }
@@ -411,8 +401,35 @@ main {
 	color: white;
 }
 
-.brutal-slider a {
-	display: none;
+.brutal-slider-link {
+	position: absolute;
+	z-index: 10;
+	bottom: 23px;
+	left: 26px;
+	
+	display: block;
+	width: 195px;
+	height: 38px;
+	border-radius: 2px;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	
+	background-color: #ff5357;
+}
+
+.brutal-slider-link:hover,
+.brutal-slider-link:focus {
+	background-color: #ca2c37;
+}
+
+.brutal-slider-link:active {
+	background-color: #ba2732;
 }
 /********************************/
 
@@ -447,17 +464,26 @@ main {
 	background-color: #ff5357;
 }
 
+.all-popular-goods:hover,
+.all-popular-goods:focus {
+	background-color: #ca2c37;
+}
+
+.all-popular-goods:active {
+	background-color: #ba2732;
+}
+
 .goods-items {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
 }
 
-.goods-item {	
+.goods-item {
+	position: relative;
 	width: 218px;
 	height: 316px;
 	border: 1px solid #eaeaea;
-/* 	border: 1px solid black; */
 	text-align: center;
 }
 
@@ -484,6 +510,7 @@ h5 {
 }
 
 .new-price {
+	position: relative;
 	display: block;
 	height: 38px;
 	width: 135px;
@@ -496,6 +523,371 @@ h5 {
 	background-color: #ee3643;
 }
 
+.new-price::after {
+	content: "";
+	position: absolute;
+	top: -0.2px;
+	right: -24px;
+	width: 0;
+	height: 0;
+	border: 19.4px solid white;
+	border-left-color: #ee3643;
+}
+
 .hovered-goods {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	height: 88px;
+	padding: 40px 0;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 10;
+}
+
+.hovered-goods .buy,
+.hovered-goods .bookmark {
+	display: block;
+	width: 129px;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 7px 0;
+	border-bottom: 3px solid #367315;
+	border-radius: 3px;
+
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Cuprum", Arial, sans-serif;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	background-color: #63a63e;
+}
+
+.hovered-goods .bookmark {
+	color: #32425c;
+	background: white;
+	border: 3px solid #63a63e;
+}
+
+.goods-item .hovered-goods {
 	display: none;
+}
+
+.goods-item:hover,
+.goods-item:focus {
+	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.goods-item:hover .hovered-goods {
+	display: block;
+}
+
+.hovered-goods .buy:hover,
+.hovered-goods .buy:focus {
+	background-color: #5fbb2d;
+}
+
+.hovered-goods .buy:active {
+	background-color: #518534;
+	border-bottom-color: #518534;
+}
+
+.hovered-goods .bookmark:hover,
+.hovered-goods .bookmark:focus {
+	border-color: #32425c;
+}
+
+.hovered-goods .bookmark:active {
+	opacity: 0.3;
+}
+
+/***ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ***/
+
+.popular-producers {
+	position: relative;
+	margin-top: 52px;
+}
+
+.popular-producers h2 {
+	margin-left: 25px;
+	margin-bottom: 54px;
+}
+
+.all-popular-producers {
+	position: absolute;
+	top: -7px;
+	right: 23px;
+	
+	display: block;
+	width: 254px;
+	height: 38px;
+	border-radius: 2px;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	
+	background-color: #ff5357;
+}
+
+.all-popular-producers:hover,
+.all-popular-producers:focus {
+	background-color: #ca2c37;
+}
+
+.all-popular-producers:active {
+	background-color: #ba2732;
+}
+
+.producers {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	flex-wrap: wrap;
+}
+
+.producer {
+	width: 218px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+	margin-bottom: 13px;
+}
+
+.producer:hover,
+.producer:focus {
+	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.producer:active {
+	box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+}
+
+.producer:active img{
+	opacity: 0.3;
+}
+
+/***СЕРВИСЫ***/
+
+.services {
+	margin-top: 131px;
+}
+
+.services > h2 {
+	color: black;
+	margin-bottom: 29px;
+}
+
+.services > p {
+	margin-bottom: 0px;
+}
+
+.services-slider {
+	display: flex;
+}
+
+.services-slider-slides {
+	width: 305%;
+}
+
+.services-slider-inner {
+	overflow: hidden;
+	box-shadow: -60px 0 75px -90px rgba(0, 0, 0, 1);
+/* 	background: pink; */
+}
+
+.services-slider-inner h2 {
+	margin-top: 0;
+	margin-bottom: 31px;
+	font-size: 36px;
+}
+
+.services-slide {
+	box-sizing: border-box;
+	height: 340px;
+	width: 710px;
+	padding-top: 60px;
+	padding-left: 80px;
+	
+	float: left;
+}
+
+.services-slide:first-child {
+	background-image: url("../img/service delivery background.png");
+	background-repeat: no-repeat;
+	background-position: 96% 100%;
+}
+
+.services-slide:nth-child(2) {
+	background-image: url("../img/service guarantee background.png");
+	background-repeat: no-repeat;
+	background-position: 96% 100%;
+}
+
+.services-slide:last-child {
+	background-image: url("../img/service credit background.png");
+	background-repeat: no-repeat;
+	background-position: 96% 100%;
+}
+
+.services-slider-controls {
+	margin-top: 70px;
+}
+
+.services-slider-controls > label {
+	display: block;
+	border-top: 1px solid #4e637c;
+	border-bottom: 1px solid #33445a;
+	padding-left: 23px;
+	height: 59px;
+	width: 217px;
+	
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 58px;
+	color: white;
+	
+	background-color: #3d546e;
+	
+	cursor: pointer;
+}
+
+#services-slider-btn-1:checked ~ .services-slider-controls label[for="services-slider-btn-1"],
+#services-slider-btn-2:checked ~ .services-slider-controls label[for="services-slider-btn-2"],
+#services-slider-btn-3:checked ~ .services-slider-controls label[for="services-slider-btn-3"] {
+	color: #3d546e;
+	border-color: white;
+	background-color: white;
+}
+
+#services-slider-btn-1:checked ~ .services-slider-inner .services-slider-slides { transform: translate(0px); }
+#services-slider-btn-2:checked ~ .services-slider-inner .services-slider-slides { transform: translate(-710px); }
+#services-slider-btn-3:checked ~ .services-slider-inner .services-slider-slides { transform: translate(-1420px); }
+
+
+.services-slider input[type=radio] {
+  display: none;
+}
+
+.services-slide a {
+	display: block;
+	margin-top: 30px;
+	width: 195px;
+	height: 38px;
+	border-radius: 2px;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	
+	background-color: #ff5357;
+}
+
+.services-slide a:hover,
+.services-slide a:focus {
+	background-color: #ca2c37;
+}
+
+.services-slide a:active {
+	background-color: #ba2732;
+}
+
+/***О КОМПАНИИ, КОНТАКТЫ И КАРТА***/
+
+.information {
+	margin-top: 58px;
+	display: flex;
+}
+
+.information h2 {
+	margin-bottom: 28px;
+}
+
+.information p {
+	margin-bottom: 24px;
+}
+
+.about-company p:last-of-type {
+	margin-bottom: 11px;
+}
+
+.contact-n-map p:first-of-type {
+	margin-bottom: 31px;
+}
+
+.about-company {
+	position: relative;
+	width: 640px;
+	height: 392px;
+}
+
+.contact-n-map {
+	position: relative;
+	width: 300px;
+	height: 392px;
+}
+
+.information ul {
+	margin-top: 0;
+}
+
+
+.information li {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 18px;
+	text-indent: 5px;
+	line-height: 40px;
+}
+
+.information li::before {
+  content: '\2015';
+  padding-right: 15px;
+	font-size: 18px;
+  color: #ff716f;
+}
+
+.information a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+	display: block;
+  height: 38px;
+	border-radius: 2px;
+	
+	font-family: "Cuprum", Arial, Sans-Serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	
+	background-color: #ff5357;
+}
+
+.about-company-link {
+	width: 220px;
+}
+.contact-n-map-link {
+	width: 300px;
+}
+
+.information a:hover,
+.information a:focus {
+	background-color: #ca2c37;
+}
+
+.information a:active {
+	background-color: #ba2732;
 }
