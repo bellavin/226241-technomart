@@ -9,7 +9,6 @@ body {
 	color: #000;
 
 	background-color: #fff;
-	background-image: url("../img/background.png");
 }
 
 a { text-decoration: none; }
@@ -39,6 +38,9 @@ h2 {
 	font-family: "Cuprum", Arial, Sans-Serif;
 	font-size: 17px;
 	font-weight: 400;
+	padding-bottom: 60px;
+	
+	background-image: url(../img/background.png);
 }
 
 .header-top {
@@ -279,16 +281,12 @@ h2 {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-main {
-	width: 940px;
-	margin: 0 auto;
-}
-
 /*Слайдер и карточки услуг*/
 /********************************/
 .services-navigation {
 	width: 940px;
-	margin-top: 120px;
+	margin: 0 auto;
+	margin-top: 60px;
 }
 
 .services-item:nth-child(1),
@@ -461,7 +459,7 @@ main {
 
 .brutal-slide h3 {
 	position: absolute;
-  top: 27px;
+  	top: 27px;
 	left: 23px;
 	
 	margin: 0;
@@ -518,6 +516,8 @@ main {
 /********************************/
 
 .popular-goods {
+	width: 940px;
+	margin: 0 auto;
 	margin-top: 77px;
 }
 
@@ -691,6 +691,8 @@ h5 {
 /***ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ***/
 
 .popular-producers {
+	width: 940px;
+	margin: 0 auto;
 	margin-top: 45px;
 }
 
@@ -762,15 +764,22 @@ h5 {
 /***СЕРВИСЫ***/
 
 .services {
-	margin-top: 131px;
+	margin-top: 64px;
+	padding-top: 43px;
+	background-image: url(../img/background.png);
 }
 
-.services > h2 {
+.services-wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.services-wrapper > h2 {
 	color: black;
-	margin-bottom: 29px;
+	margin-bottom: 28px;
 }
 
-.services > p {
+.services-wrapper > p {
 	margin-bottom: 0px;
 }
 
@@ -795,7 +804,7 @@ h5 {
 
 .services-slide {
 	box-sizing: border-box;
-	min-height: 340px;
+	min-height: 341px;
 	width: 710px;
 	padding-top: 60px;
 	padding-left: 80px;
@@ -895,7 +904,9 @@ h5 {
 /***О КОМПАНИИ, КОНТАКТЫ И КАРТА***/
 
 .information {
-	margin-top: 58px;
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 56px;
 	display: flex;
 }
 
