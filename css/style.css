@@ -518,23 +518,24 @@ main {
 /********************************/
 
 .popular-goods {
-	position: relative;
-	margin-top: 84px;
+	margin-top: 77px;
+}
+
+.popular-goods-top {
+	display: flex;
+	margin-bottom: 47px;
+	padding-left: 28px;
+	padding-right: 23px;
+	justify-content: space-between;
 }
 
 .popular-goods h2 {
-	margin-left: 28px;
-	margin-bottom: 54px;
+  margin: auto 0;
 }
 
-.all-popular-goods {
-	position: absolute;
-	top: -7px;
-	right: 23px;
-	
+.all-popular-goods {	
 	display: block;
 	width: 254px;
-	height: 38px;
 	border-radius: 2px;
 	
 	font-family: "Cuprum", Arial, Sans-Serif;
@@ -690,20 +691,22 @@ h5 {
 /***ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ***/
 
 .popular-producers {
-	position: relative;
-	margin-top: 52px;
+	margin-top: 45px;
+}
+
+.popular-producers-top {
+	display: flex;
+	margin-bottom: 47px;
+	padding-left: 24px;
+	padding-right: 24px;
+	justify-content: space-between;
 }
 
 .popular-producers h2 {
-	margin-left: 25px;
-	margin-bottom: 54px;
+	margin: auto 0;
 }
 
 .all-popular-producers {
-	position: absolute;
-	top: -7px;
-	right: 23px;
-	
 	display: block;
 	width: 254px;
 	height: 38px;
@@ -917,13 +920,11 @@ h5 {
 }
 
 .about-company {
-	position: relative;
 	width: 640px;
 	min-height: 392px;
 }
 
 .contact-n-map {
-	position: relative;
 	width: 300px;
 	min-height: 392px;
 }
@@ -948,10 +949,6 @@ h5 {
 }
 
 .information a {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	
 	display: block;
 	border-radius: 2px;
 	
@@ -967,9 +964,11 @@ h5 {
 }
 
 .about-company-link {
+	margin-top: 28px;
 	width: 220px;
 }
 .contact-n-map-link {
+	margin-top: 42px;
 	width: 300px;
 }
 
