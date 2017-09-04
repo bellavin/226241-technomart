@@ -48,7 +48,7 @@ h2 {
 .header-wrapper {
 	position: relative;
 	display: flex;
-	height: 42px;
+	min-height: 42px;
 	margin: 0 auto;
 	width: 940px;
 	color: white;
@@ -62,7 +62,6 @@ h2 {
 	position: relative;
 	
 	width: 220px;
-	height: 42px;
 	padding-top: 10px;
 	box-sizing: border-box;
 	
@@ -131,7 +130,6 @@ h2 {
 .user-card {
 	position: relative;
 	display: flex;
-	height: inherit;
 	width: 450px;
 	margin: 0;
 }
@@ -181,7 +179,7 @@ h2 {
 	display: flex;
 	margin: 0 auto;
 	width: 940px;
-	height: 158px;
+	min-height: 158px;
 }
 
 .header-description {
@@ -189,7 +187,6 @@ h2 {
 	padding-top: 32px;
 	padding-left: 53px;
 	width: 275px;
-	height: inherit;
 	
 	font-family: "Cuprum", Arial, Sans-Serif;
 	font-style: Italic;
@@ -202,7 +199,6 @@ h2 {
 .header-contact {
 	box-sizing: border-box;
 	padding-top: 35px;
-	height: inherit;
 	width: 360px;
 	text-align: center;
 }
@@ -255,7 +251,7 @@ h2 {
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
-	height: 60px;
+	min-height: 60px;
 	width: 940px;
 	margin: 0 auto;
 	
@@ -267,7 +263,7 @@ h2 {
 	flex-grow: 1;
 	border-bottom: 5px solid #293449;
 	text-align: center;
-	line-height: 56px;
+	line-height: 55px;
 	color: white;
 }
 
@@ -316,7 +312,7 @@ main {
 
 .services-item:nth-child(4) {
 	width: 620px;
-	height: 266px;
+	min-height: 266px;
 }
 
 .services-clearfix::after {
@@ -327,7 +323,7 @@ main {
 
 .services-item {
 	width: 300px;
-	height: 123px;
+	min-height: 123px;
 	float: left;
 	border: 0px solid black;
 }
@@ -348,7 +344,7 @@ main {
 	right: -1px;
 	
 	width: 60px;
-	height: 60px;
+	height: 59px;
 	background-image: url(../img/label-new.png);
 	background-repeat: no-repeat;
 }
@@ -396,7 +392,6 @@ main {
 	display: block;
 	box-sizing: border-box;
 	width: 135px;
-	height: 38px;
 	border-radius: 2px;
 	margin-left: 25px;
 	
@@ -422,7 +417,7 @@ main {
 
 .brutal-slider-inner {
 	position: relative;
-	height: 266px;
+	max-height: 266px;
   overflow: hidden;
 }
 
@@ -571,7 +566,7 @@ main {
 .goods-item {
 	position: relative;
 	width: 218px;
-	height: 316px;
+	min-height: 316px;
 	border: 1px solid #eaeaea;
 	text-align: center;
 }
@@ -599,7 +594,7 @@ h5 {
 
 .old-price {
 	display: block;
-	height: 38px;
+	min-height: 38px;
 	width: 120px;
 	margin: 0 auto;
 	
@@ -611,7 +606,7 @@ h5 {
 
 .new-price {
 	display: block;
-	height: 38px;
+	min-height: 38px;
 	width: 141px;
 	margin: 0 auto;
 	
@@ -787,7 +782,6 @@ h5 {
 .services-slider-inner {
 	overflow: hidden;
 	box-shadow: -60px 0 75px -90px rgba(0, 0, 0, 1);
-/* 	background: pink; */
 }
 
 .services-slider-inner h2 {
@@ -798,7 +792,7 @@ h5 {
 
 .services-slide {
 	box-sizing: border-box;
-	height: 340px;
+	min-height: 340px;
 	width: 710px;
 	padding-top: 60px;
 	padding-left: 80px;
@@ -833,7 +827,7 @@ h5 {
 	border-top: 1px solid #4e637c;
 	border-bottom: 1px solid #33445a;
 	padding-left: 23px;
-	height: 59px;
+	min-height: 59px;
 	width: 217px;
 	
 	font-family: "Cuprum", Arial, sans-serif;
@@ -873,7 +867,6 @@ h5 {
 	display: block;
 	margin-top: 30px;
 	width: 195px;
-	height: 38px;
 	border-radius: 2px;
 	
 	font-family: "Cuprum", Arial, Sans-Serif;
@@ -917,7 +910,7 @@ h5 {
 
 .contact-n-map .map {
 	margin-bottom: 31px;
-	height: 158px;
+	min-height: 158px;
 	width: 300px;
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
@@ -926,13 +919,13 @@ h5 {
 .about-company {
 	position: relative;
 	width: 640px;
-	height: 392px;
+	min-height: 392px;
 }
 
 .contact-n-map {
 	position: relative;
 	width: 300px;
-	height: 392px;
+	min-height: 392px;
 }
 
 .information ul {
@@ -960,7 +953,6 @@ h5 {
 	left: 0;
 	
 	display: block;
-  height: 38px;
 	border-radius: 2px;
 	
 	font-family: "Cuprum", Arial, Sans-Serif;
@@ -1000,7 +992,7 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	height: 193px;
+	min-height: 193px;
 	margin: 0 auto;
 	background-color: #3d546e;
 }
@@ -1050,7 +1042,6 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	width: 550px;
-	height: 40px;
 	
 	font-size: 18px;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -1081,7 +1072,7 @@ h5 {
 .copyright-footer-wrapper {
 	display: flex;
 	width: 940px;
-	height: 107px;
+	min-height: 107px;
 	margin: 0 auto;
 	
 	font-size: 16px;
